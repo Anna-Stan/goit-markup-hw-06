@@ -270,8 +270,8 @@
     </main>
 
     <footer class="footer">
-        <div class="container container-flex">
-        <div class="adress-flex">
+     <div class="container container-flex">
+         <div class="adress-flex">
         <a href="" class="logo link">Web<span class="logo-studio">Studio</span></a>
         <address class="adress">
             <p class="adress-text">г. Киев, пр-т Леси Украинки, 26</p>
@@ -280,7 +280,7 @@
                 <li class="adress-list-item list"><a href="tel:+38 099 111 11 11" class="adress-item-link link">+38 099 111 11 11</a></li>
             </ul>
         </address>
-        </div>
+         </div>
 
         <section class="soc-seti">
             <h2 class="soc-seti-title">присоединяйтесь</h2>
@@ -309,14 +309,32 @@
                     </a>
                 </li>
 
-
             </ul>
-        
+    
         
         </section>
+
+        <section class="form-telegram">
+            <h2 class="form-telegram-title">Подпишитесь на рассылку</h2>
+            
+            <form class="form-telegram-form">
+                <div class="form-telegram-position">
+                <input form="text" placeholder="E-mail" name="form-email" class="input-telegram-form">
+                <button type="submit" class="form-telegram-btn">Подписаться
+
+                <svg class="form-logo" width="24" height="24">
+                    <use href="./images/symbol-defs1.svg#icon-telegram-footer"></use>
+                </svg>
+
+                </button>
+                </div>
+            </form>
+           
+        </section>
         
+        </div>
     
-   </div>
+
 
 
     </footer>
@@ -360,11 +378,13 @@
             </form>
 
             <div class="modal-checkbox">
-
+                
+                
                 <input type="checkbox" id="agree"  name="agree" value="agree" class="modal-checkbox-agree" >
 
-                <label for="agree" class="checkbox-text">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                <label for="agree" class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a></label>
 
+            
             </div>
 
             <button type="submit" class="modal-form-btn">Отправить</button>

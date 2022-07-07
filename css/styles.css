@@ -635,6 +635,66 @@ margin-left: auto;}
     fill: #FFFFFF;
 }
 
+
+
+
+/*----------form--------------*/
+
+
+.form-telegram {
+min-width: 570px;
+height: 86px;
+margin-left: 93px;}
+
+
+.form-telegram-title {font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+margin-bottom: 20px;}
+
+.form-telegram-position {position: relative;}
+
+.input-telegram-form {
+width: 358px;
+height: 50px;
+background-color: transparent;
+border-color: rgba(255, 255, 255, 0.6);}
+
+.input-telegram-form::placeholder {font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+color: rgba(255, 255, 255, 0.6);
+padding-left: 16px;}
+
+
+
+.form-telegram-btn {position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 200px;
+    height: 50px;
+    background-color: rgba(33, 150, 243, 1);
+    border-color: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+
+    .form-logo {margin-left: 10px;}
+
+
 /*---------backdrop-------------*/
 
 .backdrop {
@@ -694,7 +754,7 @@ margin-left: auto;}
 
 .modal-title {font-weight: 700;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -726,6 +786,7 @@ padding-left: 42px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: #757575;
+    display: block;
 }
 
 .icon-input {
@@ -748,7 +809,9 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 resize: none;
 margin-top: 4px;
-margin-bottom: 20px;}
+margin-bottom: 20px;
+display: block;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .modal-text:focus {
     outline: 1px solid #2196F3;
@@ -764,15 +827,49 @@ margin-bottom: 20px;}
 
 
 .modal-checkbox {display: flex;
-align-items: center;}
+align-items: center;
+justify-content: center;
+}
+
+.modal-checkbox-agree:checked + .checkbox-text::before {
+border-color: #2196F3;
+background-color: #2196F3;
+background-image: url(/images/icon-check.svg);
+background-size: contain;
+background-origin: border-box;
+align-items: center;
+}
 
 
 
-.checkbox-text {font-weight: 400;
+
+.checkbox-text::before {
+content: "";
+display: inline-block;
+width: 15px;
+height: 15px;
+border: 2px solid #212121;
+margin-right: 8px;
+}
+
+
+
+
+.modal-checkbox-agree  {-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+position: absolute;}
+
+
+.checkbox-text {display: block;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575; 
+}
+.checkbox-link {
+    color: #2196F3;
 }
 
 

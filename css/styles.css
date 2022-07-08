@@ -834,9 +834,11 @@ justify-content: center;
 .modal-checkbox-agree:checked + .checkbox-text::before {
 content: "";
 display: inline-block;
+width: 8px;
+height: 11px;
 border-color: #2196F3;
 background-color: #2196F3;
-background-image: url(../images/icon-check.svg);
+background-image: url(/images/symbol-defs1.svg);
 background-size: contain;
 background-origin: border-box;
 align-items: center;

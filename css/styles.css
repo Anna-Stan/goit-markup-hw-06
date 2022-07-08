@@ -832,6 +832,7 @@ justify-content: center;
 }
 
 .modal-checkbox-agree:checked + .checkbox-text::before {
+ content: "";
 border-color: #2196F3;
 background-color: #2196F3;
 background-image: url(/images/icon-check.svg);
